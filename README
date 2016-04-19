@@ -17,6 +17,10 @@ version 1.0
     initial version
 version 1.1
     fixed issue with sscanf warning.
+version 1.11
+    fixed different issues for unbuntu mate compiler
+    (much more strict)
+
 
 Installation instructions
 **************************
