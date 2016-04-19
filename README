@@ -12,12 +12,17 @@
  * You should have received a copy of the GNU General Public License
  * along with RFID-RC522.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+
+version 1.0
+    initial version
+version 1.1
+    fixed issue with sscanf warning.
+
 Installation instructions
 **************************
 Make sure you are on latest versions
 1. sudo apt-get update & sudo apt-get upgrade & raspi-update
-2. Make sure you have SPI  in raspi-config (advanced section)
+2. Make sure you have SPI in raspi-config (advanced section)
 3. Make sure that Device tree is enabled in raspi config (advanced)
 
 cd  /home/pi ( assuming this is your home directory)
@@ -36,12 +41,12 @@ Install latest from BCM2835 from : http://www.airspayce.com/mikem/bcm2835/
 RC522 utility
 1. tar -zxvf rc522-1.0.tar.gz
 2. cd rc522
-3. cp ../bcm2835*/src/bcm2835.h   .	// get latest header file
-4. ./mc					// compile executable
+3. cp ../bcm2835*/src/bcm2835.h   . # get latest header file
+4. ./mc                             # compile executable
 5. sudo cp RC522.conf   /etc
 6. sudo chmod 666 /etc/RC522.conf
-7. edit   /etc/RC522.conf 		   // if necessary
+7. edit   /etc/RC522.conf           # if necessary
 
-Reboot 
+Reboot
 cd rc522
 Run command as root :  ./rc522  -h
