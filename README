@@ -69,6 +69,7 @@ Install latest from BCM2835 from : http://www.airspayce.com/mikem/bcm2835/
 7. cd  ..
 
 RC522 utility
+0. git clone https://github.com/paulvha/rfid-rc522.git
 1. cd rfid-rc522
 2. tar -zxvf rc522-1.6.5.tar.gz
 3. cd rc522
