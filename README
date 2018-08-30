@@ -52,22 +52,26 @@ Make sure you are on latest versions
 2. Make sure you have SPI in raspi-config (advanced section)
 3. Make sure that Device tree is enabled in raspi config (advanced)
 
+For Raspbian 9 (stretch) no need to enable "Device tree" as [it always enabled](https://www.raspberrypi.org/forums/viewtopic.php?p=1257655&sid=a088f010b2b78ab5f14e22e747b8ff2b#p1257655).
+2. Make sure you have SPI in raspi-config (5. Interfacing Options -> P4)
+
 cd  /home/pi (assuming this is your home directory)
 
-BCM2835 library (library 1.52 was the current version at the time of writting)
+BCM2835 library (library 1.56 was the current version at the time of writting)
 Install latest from BCM2835 from : http://www.airspayce.com/mikem/bcm2835/
 
-1. wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.52.tar.gz
-2. tar -zxf bcm2835-1.52.tar.gz
-3. cd bcm2835-1.52
+1. wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.56.tar.gz
+2. tar -zxf bcm2835-1.56.tar.gz
+3. cd bcm2835-1.56
 4. ./configure
 5. sudo make check
 6. sudo make install
 7. cd  ..
 
 RC522 utility
+0. git clone https://github.com/paulvha/rfid-rc522.git
 1. cd rfid-rc522
-2. tar -zxvf rc522-1.6.5.tar.gz
+2. tar -zxvf rc522-1-6-5.tar.gz
 3. cd rc522
 4. ./mc                             # compile executable
 5. sudo cp RC522.conf   /etc
